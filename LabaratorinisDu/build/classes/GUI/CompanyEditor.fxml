@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="AnchorPane" prefHeight="494.0" prefWidth="323.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.CompanyEditorController">
+  <children>
+    <Label fx:id="cid" text="Label" />
+    <Separator prefWidth="200.0" />
+    <Label text="Login" />
+    <Label text="Label" />
+    <Separator prefWidth="200.0" />
+    <Label text="Password" />
+    <Label text="Label" />
+    <Separator prefWidth="200.0" />
+    <Label text="Title" />
+    <Label text="Label" />
+    <Separator prefWidth="200.0" />
+    <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#close" text="Close">
+          <HBox.margin>
+            <Insets right="5.0" />
+          </HBox.margin>
+        </Button>
+        <Button mnemonicParsing="false" text="Delete" />
+      </children>
+    </HBox>
+  </children>
+</VBox>

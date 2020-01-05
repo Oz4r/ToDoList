@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="AnchorPane" prefHeight="579.0" prefWidth="857.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.ProjectTasksAndMembersController">
+  <children>
+    <TableView fx:id="ProjectMembers" prefHeight="579.0" prefWidth="163.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Column X" />
+        <TableColumn prefWidth="75.0" text="Column X" />
+      </columns>
+    </TableView>
+    <VBox prefHeight="579.0" prefWidth="142.0">
+      <children>
+        <TextField fx:id="projectId" prefWidth="200.0" promptText="Project Id" />
+        <TextField id="PersonId" fx:id="personId" prefWidth="200.0" promptText="Person Id" />
+        <Button mnemonicParsing="false" text="Add Member" />
+      </children>
+    </VBox>
+    <TableView id="Tasks" prefHeight="579.0" prefWidth="326.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Column X" />
+        <TableColumn prefWidth="75.0" text="Column X" />
+      </columns>
+    </TableView>
+    <VBox prefHeight="513.0" prefWidth="200.0">
+      <children>
+        <TextField fx:id="taskProjectId" prefWidth="200.0" promptText="Project Id" />
+        <TextField fx:id="title" prefWidth="200.0" promptText="Title" />
+        <TextField fx:id="description" prefHeight="88.0" prefWidth="192.0" promptText="Description" />
+        <Button mnemonicParsing="false" text="Add Task" />
+      </children>
+    </VBox>
+  </children>
+</HBox>

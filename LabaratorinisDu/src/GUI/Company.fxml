@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="AnchorPane" prefHeight="597.0" prefWidth="791.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.CompanyController">
+  <children>
+    <TableView fx:id="companyTable" onMouseClicked="#openRecord" prefHeight="597.0" prefWidth="382.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Column X" />
+        <TableColumn prefWidth="75.0" text="Column X" />
+      </columns>
+    </TableView>
+    <VBox prefHeight="597.0" prefWidth="409.0">
+      <children>
+        <Label text="Company editor" />
+        <Separator prefWidth="200.0" />
+        <Label text="Login" />
+        <TextField fx:id="companyLogin" prefWidth="200.0" />
+        <Label prefWidth="115.0" text="Password" />
+        <TextField fx:id="companyPass" prefWidth="200.0" />
+        <Label text="Title" />
+        <TextField fx:id="companyTitle" prefWidth="200.0" />
+        <Button mnemonicParsing="false" onAction="#addCompany" text="Add" />
+      </children>
+    </VBox>
+  </children>
+</HBox>

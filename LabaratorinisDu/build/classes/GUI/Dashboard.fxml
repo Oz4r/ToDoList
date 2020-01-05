@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="AnchorPane" prefHeight="604.0" prefWidth="833.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.DashboardController">
+  <children>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Person">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openPersonManager" text="Open User Managment" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Company">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openCompanyManager" text="Open Company Managment" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Project Members &amp; Tasks">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openProjectMembers" text="Open Viewer" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Project">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openProjectManager" text="Open Project Managment" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#About" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <HBox prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <PieChart id="PieChart" fx:id="userS" prefHeight="509.0" prefWidth="389.5" />
+        <AreaChart fx:id="projectS" prefHeight="568.0" prefWidth="432.0" title="Projects">
+          <xAxis>
+            <NumberAxis label="Date" side="BOTTOM" tickLabelGap="1.0" />
+          </xAxis>
+          <yAxis>
+            <NumberAxis label="Number of projects" side="LEFT" />
+          </yAxis>
+        </AreaChart>
+      </children>
+    </HBox>
+  </children>
+</VBox>

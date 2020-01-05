@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="AnchorPane" prefHeight="659.0" prefWidth="880.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.UsersController">
+  <children>
+    <VBox minWidth="14.0" prefHeight="659.0" prefWidth="14.0" HBox.hgrow="ALWAYS">
+      <children>
+        <TableView fx:id="userTable" onMouseClicked="#openRecord" prefHeight="659.0" prefWidth="310.0">
+          <columns>
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+          </columns>
+        </TableView>
+      </children>
+    </VBox>
+    <VBox prefHeight="674.0" prefWidth="275.0" HBox.hgrow="ALWAYS">
+      <children>
+        <Label contentDisplay="LEFT" prefWidth="209.0" text="Person Creation" textAlignment="LEFT" VBox.vgrow="ALWAYS" />
+        <Separator prefHeight="24.0" prefWidth="571.0" />
+        <Label text="Login" />
+        <TextField fx:id="lLogin" prefWidth="200.0" />
+        <Label text="Pass" />
+        <TextField fx:id="lPass" prefWidth="200.0" />
+        <Label text="Name" />
+        <TextField fx:id="lName" prefWidth="200.0" />
+        <Label text="Surname" />
+        <TextField fx:id="lSurname" prefWidth="200.0" />
+        <Button mnemonicParsing="false" onAction="#addPerson" text="Add Person" />
+      </children>
+    </VBox>
+  </children>
+</HBox>
